@@ -6,10 +6,17 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-05-05
+
 ### Changed
 
 - Update `dependabot/fetch-metadata` to 3.1.0 (bug fixes and improved metadata handling for dependency updates)
 - Update `lycheeverse/lychee-action` to v2.8.0 for improved link checking and reporting
+- Commented out migrations step in release workflow
+- Update `pre-commit` hook execution:
+  - Remove duplicate cspell execution from Husky hook (now handled by lint-staged only)
+  - Add visual feedback fro lint-staged execution in pre-commit hook
+  - Print summary after CSpell execution to improve readability
 
 ## [0.1.3] - 2026-05-05
 
@@ -64,7 +71,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - GitHub workflows in `.github/workflows`
 - Dependabot configuration for dependency version management
 
-[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.4...HEAD
+[0.1.4]: https://github.com/stephen-wm/firstup/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/stephen-wm/firstup/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/stephen-wm/firstup/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/stephen-wm/firstup/compare/v0.1.0...v0.1.1

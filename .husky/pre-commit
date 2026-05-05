@@ -1,16 +1,8 @@
 #!/usr/bin/env sh
 #. "$(dirname -- "$0")/_/husky.sh"
 
-# 1. Get staged files (excluding deleted files)
-STAGED_FILES=$(git diff --cached --name-only --diff-filter=d)
-
 # 2. Commit message validation
 npx commitlint --from HEAD~1 --to HEAD --verbose
-
-# 3. Run spellcheck ONLY on staged files that exist
-if [ -n "$STAGED_FILES" ]; then
-  echo "$STAGED_FILES" | xargs npx cspell --no-progress --no-summary --no-must-find-files --cache
-fi
 
 # 4. Run lint-staged and prettier
 npx lint-staged
