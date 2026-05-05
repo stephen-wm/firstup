@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-05-05
+
+### Changed
+
+- Modified the release workflow to only trigger in the main branch from merged pull requests
+
 ## [0.1.2] - 2026-05-04
 
 ### Added
@@ -53,7 +59,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - GitHub workflows in `.github/workflows`
 - Dependabot configuration for dependency version management
 
-[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/stephen-wm/firstup/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/stephen-wm/firstup/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/stephen-wm/firstup/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/stephen-wm/firstup/releases/tag/v0.1.0
