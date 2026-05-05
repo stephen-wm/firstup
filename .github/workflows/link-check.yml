@@ -30,7 +30,7 @@ jobs:
       group: link-check-${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 1
           persist-credentials: false
@@ -38,7 +38,7 @@ jobs:
       # Restore cache before running
       - name: Restore lychee cache
         id: restore-lychee
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: .lycheecache
           key: lychee-${{ runner.os }}-v1
@@ -46,7 +46,7 @@ jobs:
             lychee-${{ runner.os }}-
 
       - name: Run Lychee
-        uses: lycheeverse/lychee-action@885c65f3dc543b57c898c8099f4e08c8afd178a2 # v2.6.1
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
         with:
           args: --config lychee.toml .
         env:
@@ -54,7 +54,7 @@ jobs:
 
       - name: Save lychee cache
         if: always() && steps.restore-lychee.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: .lycheecache
           key: lychee-${{ runner.os }}-v1

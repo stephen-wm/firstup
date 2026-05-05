@@ -67,19 +67,19 @@ jobs:
         # your codebase is analyzed, see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # Add any setup steps before running the `github/codeql-action/init` action.
       # This includes steps like installing compilers or runtimes (`actions/setup-node`
       # or others). This is typically only required for manual builds.
       - name: Setup runtime
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: "package.json"
 
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v4
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
@@ -101,12 +101,12 @@ jobs:
         run: |
           echo "Switching to manual build for ${{ matrix.language }}..."
           echo "Setting up Node and installing deps (adjust as needed):"
-          echo "  - uses: actions/setup-node@v4 with node-version-file: 'package.json'"
+          echo "  - uses: actions/setup-node@v6 with node-version-file: 'package.json'"
           echo "  npm ci --ignore-scripts"
           echo "Add actual build if required by your extractor."
           exit 1
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v4
         with:
           category: "/language:${{matrix.language}}"
