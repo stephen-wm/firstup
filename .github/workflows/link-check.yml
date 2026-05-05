@@ -20,7 +20,6 @@ on:
 
 permissions:
   contents: read
-  actions: write
 
 jobs:
   link-check:
@@ -46,7 +45,7 @@ jobs:
             lychee-${{ runner.os }}-
 
       - name: Run Lychee
-        uses: lycheeverse/lychee-action@885c65f3dc543b57c898c8099f4e08c8afd178a2 # v2.6.1
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411
         with:
           args: --config lychee.toml .
         env:
