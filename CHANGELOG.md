@@ -6,6 +6,17 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-04
+
+### Added
+
+- Steps in `pre-commit` hook to lint preceding commit messages, lint, format, and spell check staged files
+
+### Changed
+
+- Pin GitHub Actions dependencies (Dependabot workflow) to specific versions/commit SHAs to improve CI security and prevent supply-chain risk
+- Updated project name referencing in issue templates, `CODE_OF_CONDUCT`, and `CONTRIBUTING` files
+
 ## [0.1.0] - 2026-05-04
 
 ### Added
@@ -24,5 +35,6 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - GitHub workflows in `.github/workflows`
 - Dependabot configuration for dependency version management
 
-[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/stephen-wm/firstup/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/stephen-wm/firstup/releases/tag/v0.1.0

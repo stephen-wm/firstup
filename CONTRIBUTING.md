@@ -1,6 +1,6 @@
-# Contributing to Nestwork
+# Contributing to FirstUp
 
-Thank you for your interest in contributing to Nestwork. This document is the single source of truth for how we develop, review, and ship changes. Read it fully before opening your first pull request — it will save you time and prevent your contribution from being sent back for procedural reasons.
+Thank you for your interest in contributing to FirstUp. This document is the single source of truth for how we develop, review, and ship changes. Read it fully before opening your first pull request — it will save you time and prevent your contribution from being sent back for procedural reasons.
 
 ---
 
@@ -35,7 +35,7 @@ For small, obvious fixes (typos, broken links, trivial bugs with a clear solutio
 
 ### Understand the license
 
-Nestwork is proprietary software. By submitting a contribution, you agree that your contribution becomes the intellectual property of the project owner under the terms of the project's license. Do not contribute code copied from third-party sources without explicit license compatibility checks.
+FirstUp is proprietary software. By submitting a contribution, you agree that your contribution becomes the intellectual property of the project owner under the terms of the project's license. Do not contribute code copied from third-party sources without explicit license compatibility checks.
 
 ### Understand what we will and won't merge
 
@@ -74,8 +74,8 @@ Ensure the following are installed before proceeding:
 **1. Fork and clone the repository**
 
 ```bash
-git clone https://github.com/your-username/nestwork.git
-cd nestwork
+git clone https://github.com/your-username/firstUp.git
+cd firstUp
 ```
 
 **2. Install dependencies**
@@ -170,7 +170,7 @@ Install these for the best development experience. When you open the project, VS
 
 ## 3. Project Structure Overview
 
-Nestwork follows a **feature-module architecture**. Understanding this is essential before writing any code.
+FirstUp follows a **feature-module architecture**. Understanding this is essential before writing any code.
 
 ```
 src/
@@ -217,7 +217,7 @@ If you are unsure, default to placing it inside the feature. It is easy to promo
 We use a two-branch integration model:
 
 ```
-main       — production. Every commit here is deployed to nestwork.xyz.
+main       — production. Every commit here is deployed to firstUp.xyz.
 develop    — integration. Features merge here first before going to main.
 ```
 

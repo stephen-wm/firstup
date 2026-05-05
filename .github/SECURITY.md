@@ -9,7 +9,7 @@ are reviewed but do not block development unless exploitable in CI or runtime.
 
 Please do not report security vulnerabilities through public GitHub issues.
 
-Email: [security@nestwork.xyz](mailto:securit@nestwork.xyz)
+Email: [security@firstup.me](mailto:security@firstup.me)
 
 Include: description of the issue, steps to reproduce, potential impact.
 You will receive a response within 72 hours. Please allow time to patch

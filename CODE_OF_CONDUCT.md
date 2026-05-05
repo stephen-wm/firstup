@@ -2,7 +2,7 @@
 
 ## Our Pledge
 
-We as contributors and maintainers of Nestwork pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
+We as contributors and maintainers of FirstUp pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
 
 We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
@@ -41,7 +41,7 @@ Maintainers have the right and responsibility to remove, edit, or reject comment
 
 ## Scope
 
-This Code of Conduct applies within all project spaces — including the GitHub repository, issue tracker, pull request discussions, and any other official communication channels associated with Nestwork. It also applies when an individual is officially representing the project in public spaces.
+This Code of Conduct applies within all project spaces — including the GitHub repository, issue tracker, pull request discussions, and any other official communication channels associated with FirstUp. It also applies when an individual is officially representing the project in public spaces.
 
 ---
 
@@ -49,7 +49,7 @@ This Code of Conduct applies within all project spaces — including the GitHub 
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at:
 
-**[conduct@nestwork.xyz](mailto:conduct@nestwork.xyz)**
+**[conduct@firstup.me](mailto:conduct@firstup.me)**
 
 All complaints will be reviewed and investigated promptly and fairly. The maintainer is obligated to respect the privacy and security of the reporter of any incident.
 

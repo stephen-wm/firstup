@@ -1,5 +1,5 @@
 name: "✨ Feature Request"
-description: Propose a new feature or enhancement for Nestwork.
+description: Propose a new feature or enhancement for FirstUp.
 title: "feat: "
 labels:
   - "enhancement"
@@ -23,7 +23,8 @@ body:
       options:
         - label: I searched existing issues and this has not been requested before
           required: true
-        - label: This request is for Nestwork itself, not a third-party integration or external tooling
+        - label: This request is for FirstUp itself, not a third-party integration or
+            external tooling
           required: true
 
   - type: dropdown
@@ -96,7 +97,8 @@ body:
     id: alternatives
     attributes:
       label: Alternatives considered
-      description: What other approaches did you think about? Why do you prefer your proposed solution over them?
+      description: What other approaches did you think about? Why do you prefer your
+        proposed solution over them?
       placeholder: |
         I considered filtering the issue list by assignee manually, but that requires knowing who to check and doesn't give an at-a-glance overview of the whole team.
     validations:
@@ -106,7 +108,9 @@ body:
     id: prior_art
     attributes:
       label: Examples from other tools
-      description: Does a similar feature exist in Linear, Jira, Notion, Asana, or another product? Link to it or describe it. This helps clarify scope quickly.
+      description: Does a similar feature exist in Linear, Jira, Notion, Asana, or
+        another product? Link to it or describe it. This helps clarify scope
+        quickly.
       placeholder: |
         Linear has a "My Issues" view but nothing team-wide. Jira has a similar workload view under Reports → User Workload (link: ...).
 
@@ -115,7 +119,7 @@ body:
     attributes:
       label: How important is this to you?
       options:
-        - "Critical — I cannot use Nestwork effectively without this"
+        - "Critical — I cannot use FirstUp effectively without this"
         - "High — this would significantly improve my workflow"
         - "Medium — useful but I have a workable alternative today"
         - "Low — nice to have, low urgency"
@@ -126,4 +130,6 @@ body:
     id: additional
     attributes:
       label: Additional context
-      description: Anything else — related issues, relevant constraints, edge cases to consider, or context about your team size or workflow that might affect the design.
+      description: Anything else — related issues, relevant constraints, edge cases to
+        consider, or context about your team size or workflow that might affect
+        the design.

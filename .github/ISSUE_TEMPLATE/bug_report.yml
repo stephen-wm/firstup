@@ -1,5 +1,5 @@
 name: "🐛 Bug Report"
-description: Report a reproducible bug or unexpected behavior in Nestwork.
+description: Report a reproducible bug or unexpected behavior in FirstUp.
 title: "bug: "
 labels:
   - "bug"
@@ -14,7 +14,7 @@ body:
 
         **Before submitting**, please:
         - Search [existing issues](../issues?q=is%3Aissue+label%3Abug) to confirm this hasn't already been reported
-        - Confirm this is a bug in Nestwork and not a configuration issue on your end
+        - Confirm this is a bug in FirstUp and not a configuration issue on your end
 
   - type: checkboxes
     id: preflight
@@ -32,7 +32,7 @@ body:
     id: severity
     attributes:
       label: Severity
-      description: How severely does this bug affect your ability to use Nestwork?
+      description: How severely does this bug affect your ability to use FirstUp?
       options:
         - "Critical — the app is unusable or data is at risk"
         - "High — a core feature is broken with no workaround"
@@ -72,7 +72,8 @@ body:
     id: description
     attributes:
       label: Bug description
-      description: A clear and concise description of what the bug is. What did you expect to happen? What actually happened?
+      description: A clear and concise description of what the bug is. What did you
+        expect to happen? What actually happened?
       placeholder: |
         When I do X, I expect Y to happen. Instead, Z happens.
     validations:
@@ -82,7 +83,8 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Provide exact, numbered steps starting from the login page. Vague steps ("it just broke") will result in the issue being closed.
+      description: Provide exact, numbered steps starting from the login page. Vague
+        steps ("it just broke") will result in the issue being closed.
       placeholder: |
         1. Log in to the application at /login
         2. Navigate to [specific page]
@@ -103,7 +105,8 @@ body:
     id: actual
     attributes:
       label: Actual behavior
-      description: What actually happened? Include any error messages exactly as they appear.
+      description: What actually happened? Include any error messages exactly as they
+        appear.
     validations:
       required: true
 
@@ -172,4 +175,5 @@ body:
     id: additional
     attributes:
       label: Additional context
-      description: Anything else that might help — related issues, recent changes to your account, whether the bug is intermittent or consistent, etc.
+      description: Anything else that might help — related issues, recent changes to
+        your account, whether the bug is intermittent or consistent, etc.

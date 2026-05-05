@@ -2,17 +2,21 @@ blank_issues_enabled: false
 
 contact_links:
   - name: 💬 Ask a question
-    url: https://github.com/nestwork/app/discussions/new?category=q-a
-    about: Have a question about using Nestwork or setting up your workspace? Start a discussion.
+    url: https://github.com/stephen-wm/firstup/app/discussions/new?category=q-a
+    about: Have a question about using FirstUp or setting up your workspace? Start a
+      discussion.
 
   - name: 💡 Share an idea informally
-    url: https://github.com/nestwork/app/discussions/new?category=ideas
-    about: Not ready to file a formal feature request? Share a rough idea in discussions first.
+    url: https://github.com/stephen-wm/firstup/app/discussions/new?category=ideas
+    about: Not ready to file a formal feature request? Share a rough idea in
+      discussions first.
 
   - name: 🔒 Report a security vulnerability
-    url: https://github.com/nestwork/app/security/advisories/new
-    about: Please report security vulnerabilities privately via GitHub's security advisory system, not as a public issue.
+    url: https://github.com/stephen-wm/firstup/app/security/advisories/new
+    about: Please report security vulnerabilities privately via GitHub's security
+      advisory system, not as a public issue.
 
   - name: 📖 Read the documentation
-    url: https://docs.nestwork.xyz
-    about: Check the documentation before filing an issue — your question may already be answered.
+    url: https://docs.firstup.me
+    about: Check the documentation before filing an issue — your question may
+      already be answered.
