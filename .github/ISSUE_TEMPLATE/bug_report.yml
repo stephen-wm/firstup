@@ -72,7 +72,8 @@ body:
     id: description
     attributes:
       label: Bug description
-      description: A clear and concise description of what the bug is. What did you
+      description:
+        A clear and concise description of what the bug is. What did you
         expect to happen? What actually happened?
       placeholder: |
         When I do X, I expect Y to happen. Instead, Z happens.
@@ -83,7 +84,8 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Provide exact, numbered steps starting from the login page. Vague
+      description:
+        Provide exact, numbered steps starting from the login page. Vague
         steps ("it just broke") will result in the issue being closed.
       placeholder: |
         1. Log in to the application at /login
@@ -105,7 +107,8 @@ body:
     id: actual
     attributes:
       label: Actual behavior
-      description: What actually happened? Include any error messages exactly as they
+      description:
+        What actually happened? Include any error messages exactly as they
         appear.
     validations:
       required: true
@@ -175,5 +178,6 @@ body:
     id: additional
     attributes:
       label: Additional context
-      description: Anything else that might help — related issues, recent changes to
+      description:
+        Anything else that might help — related issues, recent changes to
         your account, whether the bug is intermittent or consistent, etc.

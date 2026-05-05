@@ -14,4 +14,3 @@ fi
 
 # 4. Run lint-staged and prettier
 npx lint-staged
-npx pretty-quick --staged

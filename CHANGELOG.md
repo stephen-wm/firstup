@@ -6,6 +6,24 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-05-04
+
+### Added
+
+- Missing lintstaged configuration file `.lintstagedrc.json` in project root
+
+### Changed
+
+- Re-initialized Husky + Git hooks in `.husky/` folder
+- Formatted files with Prettier:
+  - `.github/ISSUE_TEMPLATE/bug_report.yml`
+  - `.github/ISSUE_TEMPLATE/config.yml`
+  - `.github/ISSUE_TEMPLATE/feature_request.yml`
+
+### Fixed
+
+- Markdownlint's "no bare URLs" error in `CODE_OF_CONDUCT` file
+
 ## [0.1.1] - 2026-05-04
 
 ### Added
@@ -35,6 +53,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - GitHub workflows in `.github/workflows`
 - Dependabot configuration for dependency version management
 
-[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/stephen-wm/firstup/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/stephen-wm/firstup/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/stephen-wm/firstup/releases/tag/v0.1.0
