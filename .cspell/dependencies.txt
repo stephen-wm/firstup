@@ -1,0 +1,18 @@
+# FirstUp project dependencies dictionaryDefinitions
+
+Turbopack
++rc
++js
+commitlint
+lintstaged
+sonar+
+neondatabase
+dbaeumer
+esbenp
+bradlc
+usernamehw
+eamodio
+trivago
+Zustand
+sonner
+shadcn
