@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.7] - 2026-05-06
+
 ### Changed
 
 - CI: Bumped `actions/checkout` from v4 to v6 in the following workflows:
@@ -120,7 +122,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - GitHub workflows in `.github/workflows`
 - Dependabot configuration for dependency version management
 
-[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.6...HEAD
+[Unreleased]: https://github.com/stephen-wm/firstup/compare/v0.1.7...HEAD
+[0.1.7]: https://github.com/stephen-wm/firstup/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/stephen-wm/firstup/compare/v0.1.5...v0.1.6
 [0.1.5]: https://github.com/stephen-wm/firstup/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/stephen-wm/firstup/compare/v0.1.3...v0.1.4
