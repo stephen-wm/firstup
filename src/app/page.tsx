@@ -4,6 +4,9 @@ import Link from 'next/link';
 
 import { createMetadata } from '@/config/create-metadata';
 
+import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/header';
+
 export const metadata: Metadata = createMetadata({
 	title: 'Your online presence in one link',
 	description:
@@ -16,9 +19,11 @@ export default function Home() {
 			className="flex flex-1 flex-col items-center justify-center bg-zinc-50
 				font-sans dark:bg-black"
 		>
+			<Header />
+
 			<main
-				className="flex w-full max-w-full flex-1 items-center justify-center
-					bg-white px-16 py-32 sm:items-center dark:bg-black"
+				className="flex min-h-screen w-full max-w-full flex-1 items-center
+					justify-center bg-primary px-16 py-32 sm:items-center dark:bg-black"
 			>
 				<div
 					className="flex flex-col justify-center gap-4 text-center
@@ -34,7 +39,7 @@ export default function Home() {
 								hover:drop-shadow-[0_0_20px_rgba(170,227,25,0.9)] dark:hidden"
 							height={0}
 							priority
-							src="/branding/logo-primary.svg"
+							src="/branding/logo-primary-alt.svg"
 							style={{ height: '35px', width: 'auto' }}
 							width={0}
 						/>
@@ -52,7 +57,7 @@ export default function Home() {
 
 					<p
 						className="max-w-md text-base/6 text-zinc-600 lg:text-lg
-							dark:text-zinc-400"
+							dark:text-zinc-600"
 					>
 						Looking for a starting point or more instructions? Head over to the{' '}
 						<Link
@@ -68,6 +73,8 @@ export default function Home() {
 					</p>
 				</div>
 			</main>
+
+			<Footer />
 		</div>
 	);
 }

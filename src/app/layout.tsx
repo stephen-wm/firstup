@@ -3,6 +3,7 @@ import { Inter_Tight } from 'next/font/google';
 
 import { createMetadata } from '@/config/create-metadata';
 import { cn } from '@/lib/utils';
+import { Providers } from '@/providers';
 
 import '@/styles/globals.css';
 
@@ -28,8 +29,11 @@ export default function RootLayout({
 		<html
 			className={cn('h-full', 'antialiased', 'font-sans', interTight.variable)}
 			lang="en"
+			suppressHydrationWarning
 		>
-			<body className="flex min-h-full flex-col">{children}</body>
+			<body className="flex min-h-full flex-col">
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }

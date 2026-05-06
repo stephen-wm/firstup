@@ -6,6 +6,23 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Header component with desktop navigation
+- Mobile navigation with custom animated hamburger menu
+- Theme toggler component for switching between light and dark modes
+- Alternative primary light logo SVG
+- Theme icon SVG (`src/components/shared/svgs.tsx`)
+- Next themes with provider wrapper for theme support
+- Installed `shadcn/ui` components: sheet, separator, skeleton
+- Custom `useIsMounted` hook to prevent hydration mismatch issues in components
+
+### Changed
+
+- Home page background updated to use primary color and background color in dark mode
+- Logo rendering updated to switch based on theme
+- Header and footer components integrated into `page.tsx`
+
 ## [0.1.4] - 2026-05-05
 
 ### Changed
