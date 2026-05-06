@@ -6,11 +6,25 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Changed
+
+- CI: Bumped `actions/checkout` from v4 to v6 in the following workflows:
+  - `ci.yml`
+  - `codeql.yml`
+  - `release.yml`
+- CI: Bumped `actions/checkout` from v5 to v6 in the following workflows:
+  - `build.yml`
+  - `commitlint.yml`
+  - `link-check.yml`
+  - `lint-and-format.yml`
+  - `spellcheck.yml`
+- Updated change notes wording under [0.1.6] in this CHANGELOG file
+
 ## [0.1.6] - 2026-05-06
 
 ### Changed
 
-- CI: Bumped `actions/setup-node` from v4 to v6 in:
+- CI: Bumped `actions/setup-node` from v4 to v6 in the following workflows:
   - `build.yml`
   - `ci.yml`
   - `codeql.yml`
@@ -18,7 +32,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
   - `lint-and-format.yml`
   - `release.yml`
   - `spellcheck.yml`
-- CI: Bumped `actions/cache` from v3 to v5 in:
+- CI: Bumped `actions/cache` from v3 to v5 in the following workflows:
   - `link-check.yml`
   - `spellcheck.yml`
 
