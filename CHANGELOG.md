@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Changed
+
+- CI: Bumped `github/codeql-action` from v3 to v4 in `codeql.yml` workflow
+
 ## [0.1.7] - 2026-05-06
 
 ### Changed
