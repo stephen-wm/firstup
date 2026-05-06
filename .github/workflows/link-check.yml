@@ -8,7 +8,7 @@ on:
       - "lychee.toml"
       - ".github/workflows/link-check.yml"
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - "**/*.md"
       - "**/*.mdx"
