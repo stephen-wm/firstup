@@ -8,7 +8,7 @@ on:
       - "lychee.toml"
       - ".github/workflows/link-check.yml"
   push:
-    branches: [main]
+    branches: [ main ]
     paths:
       - "**/*.md"
       - "**/*.mdx"
@@ -37,7 +37,7 @@ jobs:
       # Restore cache before running
       - name: Restore lychee cache
         id: restore-lychee
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: .lycheecache
           key: lychee-${{ runner.os }}-v1
@@ -53,7 +53,7 @@ jobs:
 
       - name: Save lychee cache
         if: always() && steps.restore-lychee.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: .lycheecache
           key: lychee-${{ runner.os }}-v1
