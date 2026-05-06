@@ -6,6 +6,20 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Changed
+
+- CI: Bumped `actions/setup-node` from v4 to v6 in:
+  - `build.yml`
+  - `ci.yml`
+  - `codeql.yml`
+  - `commitlint.yml`
+  - `lint-and-format.yml`
+  - `release.yml`
+  - `spellcheck.yml`
+- CI: Bumped `actions/cache` from v3 to v5 in:
+  - `link-check.yml`
+  - `spellcheck.yml`
+
 ## [0.1.5] - 2026-05-06
 
 ### Added
