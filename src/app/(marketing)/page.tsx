@@ -9,8 +9,7 @@ import { Link as LinkIcon, Star, Zap } from 'lucide-react';
 import { createMetadata } from '@/config/create-metadata';
 import { cn } from '@/lib/utils';
 
-import { MarqueeBanner } from '@/components/layout/marquee-banner';
-import { HeroMockup } from '@/components/layout/phone-mockup';
+import { PhoneMockup } from '@/components/layout/phone-mockup';
 import { Tag } from '@/components/layout/tag';
 import {
 	Accordion,
@@ -27,6 +26,18 @@ export const metadata: Metadata = createMetadata({
 	description:
 		'Create your personal FirstUp page and share your links, socials, and content in one place. Free forever.',
 });
+
+const marqueeList = [
+	'Fully customizable',
+	'Analytics Dashboard',
+	'Unlimited Links',
+	'Custom Domains',
+	'Mobile-First',
+	'Link Scheduling',
+	'QR Codes',
+	'Drag & Drop Reorder',
+	'Dark & Light Themes',
+];
 
 const features = [
 	{
@@ -264,7 +275,7 @@ export default function Home() {
 					justify-center bg-primary px-16 py-32 sm:items-center dark:bg-black"
 			>
 				<div className="w-91">
-					<HeroMockup />
+					<PhoneMockup />
 				</div>
 			</section> */}
 
@@ -349,22 +360,49 @@ export default function Home() {
 					</div>
 
 					{/* RIGHT — Phone mockups */}
-					<div className="relative flex items-end justify-center">
+					<div className="relative flex items-center justify-center">
 						<div
 							className="pointer-events-none absolute inset-0 rounded-full
 								bg-[radial-gradient(circle,rgba(163,227,20,0.06),transparent_70%)]
 								blur-2xl"
 						/>
 
-						<div className="z-10 w-87.5">
-							<HeroMockup />
+						<div className="z-10 flex w-87.5 justify-center">
+							<PhoneMockup />
 						</div>
 					</div>
 				</div>
 			</section>
 
 			{/* Marquee Banner */}
-			<MarqueeBanner />
+			<section
+				className="relative flex w-full max-w-full items-center justify-center
+					overflow-hidden bg-primary py-2"
+			>
+				<div className="w-full min-w-max overflow-hidden">
+					<Marquee
+						className="[--duration:20s]"
+						pauseOnHover
+						reverse
+					>
+						{marqueeList.map((item, i) => (
+							<div
+								className="flex shrink-0 items-center"
+								key={i}
+							>
+								<span
+									className="px-6 text-[12px] font-bold whitespace-nowrap
+										text-foreground uppercase dark:text-background"
+								>
+									{item}
+								</span>
+
+								<span className="ml-6 opacity-35 dark:text-background">✦</span>
+							</div>
+						))}
+					</Marquee>
+				</div>
+			</section>
 
 			{/* Stats Banner */}
 			<section
@@ -729,7 +767,7 @@ export default function Home() {
 							className="[--duration:20s]"
 							pauseOnHover
 						>
-							{firstRow.map((review) => (
+							{reviews.slice(0, reviews.length / 2).map((review) => (
 								<div
 									className="flex w-100 flex-col justify-between rounded-2xl
 										border border-border bg-secondary p-7"
@@ -778,7 +816,7 @@ export default function Home() {
 							pauseOnHover
 							reverse
 						>
-							{secondRow.map((review) => (
+							{reviews.slice(reviews.length / 2).map((review) => (
 								<div
 									className="flex w-100 flex-col justify-between rounded-2xl
 										border border-border bg-secondary p-7"
@@ -961,6 +999,3 @@ export default function Home() {
 		</div>
 	);
 }
-
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
