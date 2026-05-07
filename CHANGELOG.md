@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Marketing route group in `src/app/(marketing)`
 - Landing page with relevant sections (hero, features, how it works, pricing, reviews, etc.)
+- MagicUI `marquee`, `animated-list`, and `phone` components, declare magicui in the shadcn/ui registries in `components.json`
+- Add shadcn/ui `accordion`, and `input` components
 
 ### Changed
 
