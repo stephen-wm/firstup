@@ -6,6 +6,24 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Marketing route group in `src/app/(marketing)`
+- Landing page with relevant sections (hero, features, how it works, pricing, reviews, etc.)
+- MagicUI `marquee`, `animated-list`, and `phone` components, declare magicui in the shadcn/ui registries in `components.json`
+- Add shadcn/ui `accordion`, and `input` components
+
+### Changed
+
+- Updated phone mockup componet name from `HeroMockup` to `PhoneMockup` (also changed import in landing page)
+- Centered phone mockup in right hand column of the hero
+- Updated marquee banner in landing page
+- Refactored reviews marquee code to use inline array slicing instead of external variables
+
+### Removed
+
+- Marquee banner component
+
 ## [0.1.8] - 2026-05-06
 
 ### Changed

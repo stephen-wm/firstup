@@ -17,6 +17,9 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.inlineSuggest.enabled": true,
   "editor.stickyScroll.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
 
   // JS/TS
   "js/ts.tsdk.path": "node_modules/typescript/lib",
@@ -39,9 +42,10 @@
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "tailwindCSS.includeLanguages": {
-    "typescript": "html",
-    "typescriptreact": "html"
+    "javacriptreact": "html",
+    "typescriptreact": "html",
   },
+  "tailwindCSS.emmetCompletions": true,
 
   // Files
   "files.eol": "\n",
