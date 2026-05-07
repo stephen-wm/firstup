@@ -28,9 +28,9 @@ profileLinks = Array.from({ length: 10 }, () => profileLinks).flat();
 export function HeroMockup() {
 	return (
 		<div
-			className="relative w-[300px] shrink-0 overflow-hidden rounded-[36px]
-				border border-ring bg-background shadow-[0_32px_64px_rgba(0,0,0,0.6)]
-				ring-4 ring-ring"
+			className="relative w-75 shrink-0 overflow-hidden rounded-[36px] border
+				border-ring bg-background shadow-[0_32px_64px_rgba(0,0,0,0.6)] ring-4
+				ring-ring"
 		>
 			{/* Notch */}
 			<div
@@ -105,7 +105,7 @@ function ProfileLink({ label }: Readonly<{ label: string }>) {
 	return (
 		<div
 			className={cn(
-				`relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer
+				`relative mx-auto min-h-fit w-full max-w-100 cursor-pointer
 				overflow-hidden rounded-2xl p-4`,
 				// animation styles
 				'transition-all duration-200 ease-in-out hover:scale-[103%]',
