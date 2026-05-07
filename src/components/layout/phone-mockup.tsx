@@ -25,7 +25,7 @@ let profileLinks = [
 
 profileLinks = Array.from({ length: 10 }, () => profileLinks).flat();
 
-export function HeroMockup() {
+export function PhoneMockup() {
 	return (
 		<div
 			className="relative w-75 shrink-0 overflow-hidden rounded-[36px] border
