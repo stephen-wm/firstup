@@ -16,3 +16,4 @@ trivago
 Zustand
 sonner
 shadcn
+magicui
